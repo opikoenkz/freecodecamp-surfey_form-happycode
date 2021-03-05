@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Survey Form</title>
+
+        <!-- Style JavaScript -->
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="asset/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/d8c6a430bc.css"> 
+
+    </head>
+    <body>
+        <header>
+            <h1 id="title" class="title">freeCodeCamp Survey Form</h1>
+            <p id="description" class="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <main class="main-content">
+            <section>
+                <div class="container">
+                    <!-- Survey Form -->
+                    <form id="survey-form">
+                        <div class="section-header">
+                            <h3 class="survey-title">Happy Coding</h3><hr>
+                        </div>
+                        <!-- Input Name -->
+                        <div class="row">
+                            <div class="col-6 col-s-6 form-group">
+                                <label id="name-label" for="name">First Name</label><br>
+                                <input class="personal" type="text" id="name" name="name" placeholder="Your first name" required><br>
+                            </div>
+                            <div class="col-6 col-s-6 form-group">
+                                <label id="lname-label" for="lname">Last Name</label><br>
+                                <input class="personal" type="text" id="lname" name="name" placeholder="Your last name" required><br>
+                            </div>
+                        </div>
+                        
+                        <!-- Email & Age -->
+                        <div class="row">
+                            <div class="col-6 col-s-6 form-group">
+                                <label id="email-label" for="email">Email</label><br>
+                                <input class="personal" type="email" id="email" name="email" placeholder="example@gmail.com" required><br>
+                            </div>
+                            <div class="col-3 col-s-3 form-group">
+                                <label id="number-label" for="number">Age</label><br>
+                                <input class="personal" type="number" id="number" name="age" min="18" max="99" placeholder="Age" required><br>
+                            </div>
+                            <div class="col-3 col-s-3 form-group">
+                                <label id="gender-label" for="gender">Gender</label><br>
+                                <select class="form-control personal" id="gender" name="gender" required>
+                                    <option disabled selected value>Select gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Role & Feature -->
+                        <div class="row">
+                            <div class="col-6 col-s-6 form-group">
+                                <label id="role-label">Your current role?</label><br>
+                                <select class="form-control personal" id="dropdown" name="role" required>
+                                    <option disabled selected value>Select current role</option>
+                                    <option value="student">Student</option>
+                                    <option value="job">Full Time Job</option>
+                                    <option value="learner">Full Time Learner</option>
+                                    <option value="preferNo">Prefer not to say</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-6 col-s-6 form-group">
+                                <label id="feature-label">Your favorite feature?</label><br>
+                                <select class="form-control personal" id="feature" name="feature" required>
+                                    <option disabled selected value>Select an option</option>
+                                    <option value="challenges">Challenges</option>
+                                    <option value="projects">Projects</option>
+                                    <option value="community">Community</option>
+                                    <option value="open-source">Open Source</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>    
+                        </div><br>
+
+                        <!-- Skills -->
+                        <div class="row">
+                            <label id="skill-label">Your Current Skills?</label>
+                            <div class="col-3 col-s-3 form-group">
+                                <label>
+                                    <input type="checkbox" name="skill" value="html"> HTML & CSS
+                                </label><br>
+                                <label> 
+                                    <input type="checkbox" name="skill" value="javascript"> Javascript
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="skill" value="bootstrap"> Bootstrap
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="skill" value="php"> PHP
+                                </label><br>
+                            </div>
+                            <div class="col-3 col-s-3 form-group">
+                                <label>
+                                    <input type="checkbox" name="skill" value="python"> Python
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="skill" value="java"> Java
+                                </label><br>
+                                <label> 
+                                    <input type="checkbox" name="skill" value="c#"> C#
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="skill" value="go"> Golang
+                                </label><br>
+                            </div>
+                            <div class="col-3 col-s-3 form-group">
+                                <label>
+                                    <input type="checkbox" name="skill" value="node"> Node.js
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="skill" value="react"> React.js
+                                </label><br>
+                                <label> 
+                                    <input type="checkbox" name="skill" value="angular"> Angular.js
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="skill" value="asp"> ASP
+                                </label><br>
+                            </div>
+                            <div class="col-3 col-s-3 form-group">
+                                <label>
+                                    <input type="checkbox" name="skill" value="oracle"> Oracle
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="skill" value="sql"> SQL Server
+                                </label><br>
+                                <label> 
+                                    <input type="checkbox" name="skill" value="postgre"> PostgreSQL
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="skill" value="mongo"> MongoDB 
+                                </label><br>
+                            </div>
+                        </div>
+    
+                        <!-- Improved -->
+                        <div class="row">
+                            <label id="improved-label" for="improved">You like to see improved?</label>
+                            <div class="col-4 col-s-4 form-group">
+                                <label>
+                                    <input type="radio" name="improved" value="Front-end"> Front-end Projects
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="improved" value="Back-end"> Back-end Projects
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="improved" value="Data Visual"> Data Visualization
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="improved" value="Challenges"> Challenges
+                                </label><br>
+                            </div>
+                            <div class="col-4 col-s-4 form-group">
+                                <label>
+                                    <input type="radio" name="improved" value="Community"> Open Source Community
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="improved" value="Gitter"> Gitter help rooms
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="improved" value="Videos"> Videos
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="improved" value="Meetups"> City Meetups
+                                </label><br>
+                            </div>
+                            <div class="col-4 col-s-4 form-group ">
+                                <label class="input-radio-x">
+                                    <input type="radio" name="improved" value="Wiki"> Wiki
+                                </label><br>
+                                <label class="input-radio-x">
+                                    <input type="radio" name="improved" value="Forum"> Forum
+                                </label><br>
+                                <label class="input-radio-x">
+                                    <input type="radio" name="improved" value="Courses"> Courses
+                                </label><br>
+                                <label class="input-radio-x">
+                                    <input type="radio" name="improved" value="Cloud"> Cloud
+                                </label><br>
+                            </div>
+                        </div>
+    
+                        <!-- Web URL -->
+                        <div class="row">
+                            <div class="col-12 col-s-12 form-group">
+                                <label id="linkedin-label">Linkedin</label><br>
+                                <input class="personal" type="url" id="linkedin" placeholder="URL" required><br>
+                            </div>
+                        </div>
+    
+                        <!-- Comment Area -->
+                        <div class="row">
+                            <div class="col-12 col-s-12 form-group">
+                                <label id="comment-label">Any comments or suggestions?</label><br>
+                                <textarea  class="input-textarea personal" id="comments" name="comment" placeholder="Enter your comment here..."></textarea><br>
+                            </div>
+                        </div>
+                        
+                        <!-- Button Submit -->
+                        <div class="row">
+                            <div class="col-12 col-s-12 form-group">
+                                <button id="submit" type="submit" class="btn" value="Submit"><strong>Submit</strong></button>
+                            </div>
+                        </div>
+                        <!-- Icons -->
+                        <div class="row">
+                            <a href="https://github.com/opikoenkz" class="contact-detail" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <figcaption>Created & Development by Muh. Taufik H.</figcaption>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main> 
+
+    </body>
+</html>
