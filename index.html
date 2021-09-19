@@ -5,9 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Survey Form</title>
 
-        <!-- Style JavaScript -->
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
         <!-- Style CSS -->
         <link rel="stylesheet" href="asset/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/d8c6a430bc.css"> 
@@ -28,11 +25,11 @@
                         </div>
                         <!-- Input Name -->
                         <div class="row">
-                            <div class="col-6 col-s-6 form-group">
+                            <div class="col-6 col-sm-12 form-group">
                                 <label id="name-label" for="name">First Name</label><br>
                                 <input class="personal" type="text" id="name" name="name" placeholder="Your first name" required><br>
                             </div>
-                            <div class="col-6 col-s-6 form-group">
+                            <div class="col-6 col-sm-12 form-group">
                                 <label id="lname-label" for="lname">Last Name</label><br>
                                 <input class="personal" type="text" id="lname" name="name" placeholder="Your last name" required><br>
                             </div>
@@ -40,15 +37,15 @@
                         
                         <!-- Email & Age -->
                         <div class="row">
-                            <div class="col-6 col-s-6 form-group">
+                            <div class="col-6 col-sm-12 form-group">
                                 <label id="email-label" for="email">Email</label><br>
                                 <input class="personal" type="email" id="email" name="email" placeholder="example@gmail.com" required><br>
                             </div>
-                            <div class="col-3 col-s-3 form-group">
+                            <div class="col-3 col-sm-6 form-group">
                                 <label id="number-label" for="number">Age</label><br>
                                 <input class="personal" type="number" id="number" name="age" min="18" max="99" placeholder="Age" required><br>
                             </div>
-                            <div class="col-3 col-s-3 form-group">
+                            <div class="col-3 col-sm-6 form-group">
                                 <label id="gender-label" for="gender">Gender</label><br>
                                 <select class="form-control personal" id="gender" name="gender" required>
                                     <option disabled selected value>Select gender</option>
@@ -60,7 +57,7 @@
                         
                         <!-- Role & Feature -->
                         <div class="row">
-                            <div class="col-6 col-s-6 form-group">
+                            <div class="col-6 col-sm-12 form-group">
                                 <label id="role-label">Your current role?</label><br>
                                 <select class="form-control personal" id="dropdown" name="role" required>
                                     <option disabled selected value>Select current role</option>
@@ -71,7 +68,7 @@
                                     <option value="other">Other</option>
                                 </select>
                             </div>
-                            <div class="col-6 col-s-6 form-group">
+                            <div class="col-6 col-sm-12 form-group">
                                 <label id="feature-label">Your favorite feature?</label><br>
                                 <select class="form-control personal" id="feature" name="feature" required>
                                     <option disabled selected value>Select an option</option>
@@ -87,7 +84,7 @@
                         <!-- Skills -->
                         <div class="row">
                             <label id="skill-label">Your Current Skills?</label>
-                            <div class="col-3 col-s-3 form-group">
+                            <div class="col-3 col-sm-6 form-group">
                                 <label>
                                     <input type="checkbox" name="skill" value="html"> HTML & CSS
                                 </label><br>
@@ -101,7 +98,7 @@
                                     <input type="checkbox" name="skill" value="php"> PHP
                                 </label><br>
                             </div>
-                            <div class="col-3 col-s-3 form-group">
+                            <div class="col-3 col-sm-6 form-group">
                                 <label>
                                     <input type="checkbox" name="skill" value="python"> Python
                                 </label><br>
@@ -115,7 +112,7 @@
                                     <input type="checkbox" name="skill" value="go"> Golang
                                 </label><br>
                             </div>
-                            <div class="col-3 col-s-3 form-group">
+                            <div class="col-3 col-sm-6 form-group">
                                 <label>
                                     <input type="checkbox" name="skill" value="node"> Node.js
                                 </label><br>
@@ -129,7 +126,7 @@
                                     <input type="checkbox" name="skill" value="asp"> ASP
                                 </label><br>
                             </div>
-                            <div class="col-3 col-s-3 form-group">
+                            <div class="col-3 col-sm-6 form-group">
                                 <label>
                                     <input type="checkbox" name="skill" value="oracle"> Oracle
                                 </label><br>
@@ -148,7 +145,7 @@
                         <!-- Improved -->
                         <div class="row">
                             <label id="improved-label" for="improved">You like to see improved?</label>
-                            <div class="col-4 col-s-4 form-group">
+                            <div class="col-4 col-sm-12 form-group">
                                 <label>
                                     <input type="radio" name="improved" value="Front-end"> Front-end Projects
                                 </label><br>
@@ -162,7 +159,7 @@
                                     <input type="radio" name="improved" value="Challenges"> Challenges
                                 </label><br>
                             </div>
-                            <div class="col-4 col-s-4 form-group">
+                            <div class="col-4 col-sm-12 form-group">
                                 <label>
                                     <input type="radio" name="improved" value="Community"> Open Source Community
                                 </label><br>
@@ -176,7 +173,7 @@
                                     <input type="radio" name="improved" value="Meetups"> City Meetups
                                 </label><br>
                             </div>
-                            <div class="col-4 col-s-4 form-group ">
+                            <div class="col-4 col-sm-12 form-group ">
                                 <label class="input-radio-x">
                                     <input type="radio" name="improved" value="Wiki"> Wiki
                                 </label><br>
@@ -191,18 +188,18 @@
                                 </label><br>
                             </div>
                         </div>
-    
+
                         <!-- Web URL -->
                         <div class="row">
-                            <div class="col-12 col-s-12 form-group">
+                            <div class="col-12 col-sm-12 form-group">
                                 <label id="linkedin-label">Linkedin</label><br>
                                 <input class="personal" type="url" id="linkedin" placeholder="URL" required><br>
                             </div>
                         </div>
-    
+                        
                         <!-- Comment Area -->
                         <div class="row">
-                            <div class="col-12 col-s-12 form-group">
+                            <div class="col-12 col-sm-12 form-group">
                                 <label id="comment-label">Any comments or suggestions?</label><br>
                                 <textarea  class="input-textarea personal" id="comments" name="comment" placeholder="Enter your comment here..."></textarea><br>
                             </div>
@@ -210,10 +207,11 @@
                         
                         <!-- Button Submit -->
                         <div class="row">
-                            <div class="col-12 col-s-12 form-group">
+                            <div class="col-12 col-sm-12 form-group">
                                 <button id="submit" type="submit" class="btn" value="Submit"><strong>Submit</strong></button>
                             </div>
                         </div>
+                        
                         <!-- Icons -->
                         <div class="row">
                             <a href="https://github.com/opikoenkz" class="contact-detail" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -223,6 +221,9 @@
                 </div>
             </section>
         </main> 
+
+        <!-- JavaScript -->
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     </body>
 </html>
