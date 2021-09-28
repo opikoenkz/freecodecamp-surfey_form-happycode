@@ -11,4 +11,4 @@ You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is rec
 Using Technology: HTML & CSS
 
 This website is a web challenge from freeCodeCamp
-URL: https://opikoenkz.github.io/freecodecamp-surfey_form-happycode/
+URL: https://opikoenkz.github.io/freecodecamp-surfey_form-happycode/ or URL: https://surfey-happycode.netlify.app/
